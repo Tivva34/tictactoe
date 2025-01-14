@@ -8,11 +8,11 @@ let oGameData = {};
 
 window.addEventListener('load', () => {
     initGlobalObject();
-    if(checkForGameOver() === 1) {
-        console.log("Spelare 1 vann");        
-    } else if(checkForGameOver() === 2) {
+    if (checkForGameOver() === 1) {
+        console.log("Spelare 1 vann");
+    } else if (checkForGameOver() === 2) {
         console.log("Spelare 2 vann");
-    } else if(checkForGameOver() === 3) {
+    } else if (checkForGameOver() === 3) {
         console.log("Oavgjort");
     } else {
         console.log("Spelet fortsätter");
@@ -29,7 +29,7 @@ function initGlobalObject() {
     //Datastruktur för vilka platser som är lediga respektive har brickor
     //Genom at fylla i här med antingen X eler O kan ni testa era rättningsfunktioner 
     oGameData.gameField = ['', '', '', '', '', '', '', '', ''];
-    
+
     /* Testdata för att testa rättningslösning */
     //oGameData.gameField = ['X', 'X', 'X', '', '', '', '', '', ''];
     //oGameData.gameField = ['X', '', '', 'X', '', '', 'X', '', ''];
@@ -79,7 +79,8 @@ function initGlobalObject() {
  * returnerar 3 om det är oavgjort.
  * Funktionen tar inte emot några värden.
  */
-function checkForGameOver() {   
+
+function checkForGameOver() {
 
 }
 
@@ -103,14 +104,14 @@ function prepGame() {
 }
 
 function validateForm() {
-    
+
 }
 
 function initiateGame() {
 
 }
 
-function executeMove (event) {
+function executeMove(event) {
 
 }
 
